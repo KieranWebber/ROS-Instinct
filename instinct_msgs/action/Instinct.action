@@ -1,0 +1,9 @@
+#action specification
+int32 action_id
+int32 action_value
+---
+#result
+uint32 action_response
+---
+#action feedback
+uint32 action_feedback

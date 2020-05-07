@@ -1,0 +1,7 @@
+<launch>
+    <node name="rosbot" pkg="instinct_rosbot_control" type="node"/>
+    <node name="instinct_planner" pkg="ros_instinct_core" type="node" output="screen">
+            <param name="instinct_plan_file" value="$(find ros_instinct_core)/plans/planner_trial.inst"/>
+            <param name="instinct_spin_rate" value="60"/>
+    </node>
+</launch>

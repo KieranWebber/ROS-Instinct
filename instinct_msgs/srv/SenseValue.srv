@@ -1,0 +1,5 @@
+# ID of the sense to request
+uint32 sense_id
+---
+# Sense read value
+int32 sense_value

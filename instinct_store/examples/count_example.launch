@@ -1,0 +1,14 @@
+<launch>
+    <node name="instinct_store" pkg="instinct_store" type="node" output="screen"/>
+    <node name="instinct_planner" pkg="ros_instinct_core" type="node">
+        <param name="instinct_plan_file" value="$(find ros_instinct_core)/plans/store_example.inst"/>
+        <param name="instinct_spin_rate" value="10"/>
+        <rosparam param="instinct_sense_map">
+            0-4: store_sense_service
+        </rosparam>
+        <rosparam param="instinct_action_map">
+            0-4: store_action_service
+        </rosparam>
+    </node>
+
+</launch>
